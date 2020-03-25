@@ -40,6 +40,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestDictionary.cs" />
     <Compile Include="TestDictionaryNode.cs" />
   </ItemGroup>
   <ItemGroup>

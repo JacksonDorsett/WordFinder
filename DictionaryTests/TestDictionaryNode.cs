@@ -39,5 +39,16 @@ namespace DictionaryTests
             }
             Assert.IsFalse(t.AddChild('a'));
         }
+        [Test]
+        public void TestGetChild()
+        {
+            var t = new DictionaryNode();
+            //test null return
+            Assert.IsNull(t.GetChild('a'));
+
+            Assert.IsTrue(t.AddChild('a'));
+            Assert.IsNotNull(t.GetChild('a'));
+
+        }
     }
 }

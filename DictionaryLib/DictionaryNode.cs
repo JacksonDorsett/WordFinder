@@ -40,6 +40,10 @@ namespace DictionaryLib
         }
         internal DictionaryNode GetChild(char c)
         {
+            if(HasChild(c))
+            {
+                return children[c];
+            }
             return null;
         }
         internal bool HasChild(char c)
@@ -49,3 +53,4 @@ namespace DictionaryLib
         
     }
 }
+
