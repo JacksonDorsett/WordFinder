@@ -1,8 +1,10 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace DictionaryLib
 {
-    public class Dictionary
+    abstract public class Dictionary
     {
+        
+        abstract protected bool Add(string s);
     }
 }

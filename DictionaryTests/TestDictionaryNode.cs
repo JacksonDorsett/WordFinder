@@ -3,7 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
-
+using DictionaryLib;
 namespace DictionaryTests
 {
     [TestFixture]
@@ -12,9 +12,7 @@ namespace DictionaryTests
         [Test]
         public void TestMethod()
         {
-            // TODO: Add your test code here
-            var answer = 42;
-            Assert.That(answer, Is.EqualTo(42), "Some useful error message");
+            var t = new DictionaryNode();
         }
     }
 }

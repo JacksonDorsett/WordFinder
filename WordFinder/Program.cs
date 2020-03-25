@@ -10,6 +10,7 @@ namespace WordFinder
     {
         static void Main(string[] args)
         {
+            DictionaryLib.MutableDictionary d = new DictionaryLib.MutableDictionary();
         }
     }
 }
