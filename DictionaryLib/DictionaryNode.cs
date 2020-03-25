@@ -19,6 +19,10 @@ namespace DictionaryLib
             {
                 return this.isWord;
             }
+            set
+            {
+                this.isWord = value;
+            }
         }
 
 
@@ -32,7 +36,7 @@ namespace DictionaryLib
         }
         internal bool HasChild(char c)
         {
-            return false;
+            return this.children.ContainsKey(c);
         }
         
     }

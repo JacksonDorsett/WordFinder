@@ -10,9 +10,33 @@ namespace DictionaryTests
     public class TestDictionaryNode
     {
         [Test]
-        public void TestMethod()
+        public void TestHasChildNoChildren()
         {
             var t = new DictionaryNode();
+            for (char i = 'a'; i <= 'z';++i)
+            {
+                Assert.IsFalse(t.HasChild(i));
+            }
+        }
+
+        
+
+        [Test]
+        public void TestAddChild()
+        {
+            var t = new DictionaryNode();
+            t.AddChild('a');
+            Assert.IsTrue(t.HasChild('a')); //dependent on HasChild Tests
+        }
+        [Test]
+        public void TestHasChildWithChildren()
+        {
+            var t = new DictionaryNode();
+            for (char i = 'a'; i <= 'z'; ++i)
+            {
+                t.AddChild(i);
+                Assert.IsTrue(t.HasChild(i));
+            }
         }
     }
 }
