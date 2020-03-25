@@ -28,7 +28,15 @@ namespace DictionaryLib
 
         internal bool AddChild(char c)
         {
-            return false;
+            if(HasChild(c))
+            {
+                return false;
+            }
+            else
+            {
+                children[c] = new DictionaryNode();
+                return true;
+            }
         }
         internal DictionaryNode GetChild(char c)
         {

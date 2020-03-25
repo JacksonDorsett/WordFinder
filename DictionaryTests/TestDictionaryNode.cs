@@ -25,7 +25,7 @@ namespace DictionaryTests
         public void TestAddChild()
         {
             var t = new DictionaryNode();
-            t.AddChild('a');
+            Assert.IsTrue(t.AddChild('a'));
             Assert.IsTrue(t.HasChild('a')); //dependent on HasChild Tests
         }
         [Test]
@@ -37,6 +37,7 @@ namespace DictionaryTests
                 t.AddChild(i);
                 Assert.IsTrue(t.HasChild(i));
             }
+            Assert.IsFalse(t.AddChild('a'));
         }
     }
 }
