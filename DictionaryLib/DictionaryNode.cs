@@ -13,8 +13,10 @@ namespace DictionaryLib
             this.children = new Dictionary<char, DictionaryNode>();
             this.isWord = false;
         }
+        
         internal bool IsWord
         {
+            
             get
             {
                 return this.isWord;

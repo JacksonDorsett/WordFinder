@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="TestDictionary.cs" />
     <Compile Include="TestDictionaryNode.cs" />
+    <Compile Include="TestFileDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

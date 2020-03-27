@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework;
-using DictionaryLib;
+
 namespace DictionaryTests
 {
+    using NUnit.Framework;
+    using DictionaryLib;
     [TestFixture]
     class TestDictionaryClass
     {
