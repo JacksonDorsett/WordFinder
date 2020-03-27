@@ -5,7 +5,7 @@ using System.Text;
 namespace DictionaryLib
 {
     using System.IO;
-    class FileDictionary : ConstantDictionary
+    public class FileDictionary : ConstantDictionary
     {
         
         public FileDictionary(string filePath)
@@ -16,7 +16,7 @@ namespace DictionaryLib
                 {
                     foreach (string s in File.ReadAllText(filePath).Split('\n', ' '))
                     {
-                        Add(s);
+                        Add(s.Replace("\r", ""));
                     }
                 }
                 
